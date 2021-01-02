@@ -6,11 +6,18 @@
     <title>Aspect Ratio</title>
   </head>
   <body>
+    <!-- 
+      - se o aspectRatio for "none" a imagem ficará distorcida, pois as proporções não serão preservadas.
+      - O primeiro argumento poderá ser algo tipo: xMinYMin - xMidYMax, sendo que min, mid ou max dirá
+      qual o ponto inicial de renderização na view.
+      - o segundo argumento será "slice ou meet", sendo que o slice corta a imagem e o meet mantem dentro
+      da view.
+    -->
     <svg
       width="200"
       height="200"
       viewBox="0 0 467.1 689.15"
-      preserveAspectRatio="none"
+      preserveAspectRatio="xMinYMin slice"
     >
       <path
         id="path2402"
